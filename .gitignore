@@ -2,8 +2,9 @@
 Thumbs.db
 db.json
 *.log
+package-lock.json
+
 node_modules/
 public/
 .deploy*/
 themes/next
-package.json
