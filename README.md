@@ -1,6 +1,14 @@
-# Blog
+# Blog Source
 
-Blog Source
+## init theme
 
-* 使用主题 [next](https://github.com/theme-next/hexo-theme-next)
-* 使用动态背景 [nest](https://github.com/theme-next/theme-next-canvas-nest)
+```shell
+git submodule init
+git submodule update
+```
+
+## get animation
+
+```shell
+https://github.com/theme-next/theme-next-canvas-nest themes/next/source/lib/canvas-nest
+```
