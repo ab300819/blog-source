@@ -4,16 +4,16 @@
 
 # Site
 title: Hello World
-subtitle:
+subtitle: hello
 description: Talk is cheap. Show me the code.
-keywords:
-author: Mason Men
+keywords: Java Python JavaScript Go C/C++ 
+author: mason
 language: zh-Hans
-timezone:
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://ab300819.github.io/blog
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -29,7 +29,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -79,7 +79,7 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:ab300819/ab300819.github.io.git
+  repo: git@github.com:ab300819/blog.git
   branch: master
 
 theme_config:
@@ -87,7 +87,7 @@ theme_config:
     enable: true
     permalink: https://github.com/ab300819
 
-  disable_baidu_transformation: true
+  disable_baidu_transformation: false
   seo: true
   baidu_push: true
 
