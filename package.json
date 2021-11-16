@@ -1,20 +1,22 @@
 {
-  "name": "blog-site",
+  "name": "treasure-chest",
   "version": "1.0.0",
-  "private": true,
-  "hexo": {
-    "version": "4.2.1"
+  "description": "Record what you have learned in the past",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "hexo": "^4.2.1",
-    "hexo-deployer-git": "^2.1.0",
-    "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-category": "^1.0.0",
-    "hexo-generator-index": "^1.0.0",
-    "hexo-generator-tag": "^1.0.0",
-    "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-marked": "^2.0.0",
-    "hexo-renderer-stylus": "^1.1.0",
-    "hexo-server": "^1.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ab300819/blog-source.git"
+  },
+  "author": "Mason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ab300819/blog-source/issues"
+  },
+  "homepage": "https://github.com/ab300819/blog-source#readme",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.27"
   }
 }
