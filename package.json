@@ -4,7 +4,8 @@
   "description": "Record what you have learned in the past",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,10 @@
     "url": "https://github.com/ab300819/blog-source/issues"
   },
   "homepage": "https://github.com/ab300819/blog-source#readme",
+  "dependencies": {
+    "vuepress-theme-vdoing": "^1.8.5"
+  },
   "devDependencies": {
-    "vuepress": "^2.0.0-beta.27"
+    "vuepress": "^1.8.2"
   }
 }
