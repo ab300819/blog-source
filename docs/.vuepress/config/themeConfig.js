@@ -63,12 +63,22 @@ module.exports = {
       {
         iconClass: 'icon-youjian',
         title: '发邮件',
-        link: 'mailto:894072666@qq.com',
+        link: 'mailto:ab300819@163.com',
       },
       {
         iconClass: 'icon-github',
         title: 'GitHub',
-        link: 'https://github.com/xugaoyi',
+        link: 'https://github.com/ab300819',
+      },
+      {
+        iconClass: 'icon-zhihu',
+        title: 'zhihu',
+        link: '',
+      },
+      {
+        iconClass: 'icon-douban',
+        title: 'douban',
+        link: '',
       },
       {
         iconClass: 'icon-erji',
@@ -79,9 +89,9 @@ module.exports = {
   },
   footer: {
     // 页脚信息
-    createYear: 2019, // 博客创建年份
+    createYear: 2017, // 博客创建年份
     copyrightInfo:
-      'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      'Mason | <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>', // 博客版权信息，支持a标签
   },
   htmlModules // 插入hmtl(广告)模块
 }
