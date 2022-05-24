@@ -17,11 +17,11 @@
     "url": "https://github.com/ab300819/blog-source/issues"
   },
   "homepage": "https://github.com/ab300819/blog-source#readme",
-  "dependencies": {
-    "dayjs": "^1.10.7",
-    "vuepress-theme-vdoing": "^1.11.3"
-  },
   "devDependencies": {
-    "vuepress": "^1.9.7"
+    "dayjs": "^1.11.2",
+    "vuepress": "^1.9.7",
+    "vuepress-plugin-one-click-copy": "^1.0.6",
+    "vuepress-plugin-thirdparty-search": "^1.0.2",
+    "vuepress-theme-vdoing": "^1.11.3"
   }
 }

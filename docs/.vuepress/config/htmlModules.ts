@@ -1,3 +1,5 @@
+import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
+
 /** 插入自定义html模块 (可用于插入广告模块等)
  * {
  *   homeSidebarB: htmlString, 首页侧边栏底部
@@ -15,10 +17,9 @@
  * }
  *
  * ①注：在.md文件front matter配置`article: false`的页面是自定义页，未配置的默认是文章页（首页除外）。
- * ②注：windowLB 和 windowRB：1.展示区块宽高最大是200*200px。2.请给自定义元素定一个不超过200px的固定宽高。3.在屏宽小于960px时无论如何都不会显示。
+ * ②注：windowLB 和 windowRB：1.展示区块最大宽高200px*400px。2.请给自定义元素定一个不超过200px*400px的宽高。3.在屏幕宽度小于960px时无论如何都不会显示。
  */
-
-module.exports = {
+const htmlModule: VdoingThemeConfig['htmlModules'] = {
   homeSidebarB:
     `<div style="padding: 0.95rem">
     <p style="
@@ -28,10 +29,7 @@ module.exports = {
       font-weight: bold;
       margin: 0 0 8px 0;
     ">公众号</p>
-    <img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store@master/blog/扫码_搜索联合传播样式-标准色版.1wp8gd1mhjhc.jpg"  style="width:100%;" />
-    <p>
-    有趣研究社，这里有<a href="https://game.xugaoyi.com" arget="_blank" > FC在线模拟器(小霸王) <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，还有更多好玩的等着你去探索~
-    </br></br>
+    <img src="https://open.weixin.qq.com/qr/code?username=gh_0cf4b813918c"  style="width:100%;" />
     关注公众号，回复[<b>前端资源</b>]，可获取 <a href="https://game.xugaoyi.com" arget="_blank" >前端学习资源<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
     </p>
     </div>`,
@@ -54,38 +52,38 @@ module.exports = {
   //     <script>
   //         (adsbygoogle = window.adsbygoogle || []).push({});
   //     </script>`,
-  sidebarB:
-    `<!-- 正方形 -->
-      <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-7828333725993554"
-          data-ad-slot="3508773082"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
-      <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>`,
-  pageT:
-    `<!-- 固定100% * 90px可显示，max-height:90px未见显示-->
-     <ins class="adsbygoogle"
-          style="display:inline-block;width:100%;max-height:90px"
-          data-ad-client="ca-pub-7828333725993554"
-          data-ad-slot="6625304284"></ins>
-      <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>`,
+  // sidebarB:
+  //   `<!-- 正方形 -->
+  //     <ins class="adsbygoogle"
+  //         style="display:block"
+  //         data-ad-client="ca-pub-7828333725993554"
+  //         data-ad-slot="3508773082"
+  //         data-ad-format="auto"
+  //         data-full-width-responsive="true"></ins>
+  //     <script>
+  //         (adsbygoogle = window.adsbygoogle || []).push({});
+  //     </script>`,
+  // pageT:
+  //   `<!-- 固定100% * 90px可显示，max-height:90px未见显示-->
+  //    <ins class="adsbygoogle"
+  //         style="display:inline-block;width:100%;max-height:90px"
+  //         data-ad-client="ca-pub-7828333725993554"
+  //         data-ad-slot="6625304284"></ins>
+  //     <script>
+  //         (adsbygoogle = window.adsbygoogle || []).push({});
+  //     </script>`,
   // pageTshowMode: 'article',
-  pageB:
-    `<!-- 横向自适应 -->
-      <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="ca-pub-7828333725993554"
-          data-ad-slot="6620245489"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
-      <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>`,
+  // pageB:
+  //   `<!-- 横向自适应 -->
+  //     <ins class="adsbygoogle"
+  //         style="display:block"
+  //         data-ad-client="ca-pub-7828333725993554"
+  //         data-ad-slot="6620245489"
+  //         data-ad-format="auto"
+  //         data-full-width-responsive="true"></ins>
+  //     <script>
+  //         (adsbygoogle = window.adsbygoogle || []).push({});
+  //     </script>`,
   // pageBshowMode: 'article',
   // windowLB: // 会遮挡部分侧边栏
   //   `<!-- 固定200*200px -->
@@ -97,20 +95,20 @@ module.exports = {
   //     <script>
   //         (adsbygoogle = window.adsbygoogle || []).push({});
   //     </script>`,
-  windowRB:
-    `<!-- 固定160*160px -->
-      <ins class="adsbygoogle"
-          style="display:inline-block;max-width:160px;max-height:160px"
-          data-ad-client="ca-pub-7828333725993554"
-          data-ad-slot="8377369658"></ins>
-      <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-      `,
+  // windowRB:
+  //   `<!-- 固定160*160px -->
+  //     <ins class="adsbygoogle"
+  //         style="display:inline-block;max-width:160px;max-height:160px"
+  //         data-ad-client="ca-pub-7828333725993554"
+  //         data-ad-slot="8377369658"></ins>
+  //     <script>
+  //         (adsbygoogle = window.adsbygoogle || []).push({});
+  //     </script>
+  //     `,
 }
 
 
-// module.exports = {
+// const htmlModule = {
 //   homeSidebarB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
 //   sidebarT: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
 //   sidebarB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
@@ -119,3 +117,6 @@ module.exports = {
 //   windowLB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
 //   windowRB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
 // }
+
+
+export default htmlModule
