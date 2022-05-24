@@ -1,10 +1,10 @@
 .DS_Store
 Thumbs.db
 db.json
-*.log
 package-lock.json
+*.log
 .idea/
 node_modules/
 .temp/
 .cache/
-docs/.vuepress/dist/
+dist/
