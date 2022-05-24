@@ -1,9 +1,16 @@
+const head = require('./config/head.js');
+const plugins = require('./config/plugins.js');
+const themeConfig = require('./config/themeConfig.js');
+
 module.exports = {
     lang: 'zh-CN',
-    title: '你好， VuePress ！',
-    description: '这是我的第一个 VuePress 站点',
+    title: "Mason's blog",
+    description: '',
     theme:'vdoing',
-    themeConfig: {
-        logo: 'https://vuejs.org/images/logo.png',
+    themeConfig,
+    markdown:{
+        lineNumbers: true,
     },
+    head,
+    plugins,
 }
