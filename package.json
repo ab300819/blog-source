@@ -12,16 +12,16 @@
     "url": "git+ssh://git@github.com/ab300819/blog-source.git"
   },
   "author": "Mason",
-  "license": "ISC",
+  "license": "CC BY-SA 4.0",
   "bugs": {
     "url": "https://github.com/ab300819/blog-source/issues"
   },
   "homepage": "https://github.com/ab300819/blog-source#readme",
   "dependencies": {
     "dayjs": "^1.10.7",
-    "vuepress-theme-vdoing": "^1.8.5"
+    "vuepress-theme-vdoing": "^1.11.3"
   },
   "devDependencies": {
-    "vuepress": "^1.8.2"
+    "vuepress": "^1.9.7"
   }
 }
