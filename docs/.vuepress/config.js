@@ -5,15 +5,12 @@ const themeConfig = require('./config/themeConfig.js');
 module.exports = {
     lang: 'zh-CN',
     title: "Mason's blog",
-    description: '这是我的第一个 VuePress 站点',
+    description: '',
     theme:'vdoing',
-    themeConfig: {
-        logo: 'https://vuejs.org/images/logo.png',
-    },
+    themeConfig,
     markdown:{
         lineNumbers: true,
     },
     head,
     plugins,
-    themeConfig,
 }
